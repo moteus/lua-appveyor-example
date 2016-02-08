@@ -1,3 +1,5 @@
+pcall(require, "luacov")
+
 local tsc = require "telescope"
 
 context("Foo test", function()
