@@ -78,5 +78,5 @@ after_test:
   - luarocks show dkjson || luarocks install dkjson
   - luarocks show luafilesystem || luarocks install luafilesystem
   - luarocks show lua-path || luarocks install lua-path
-  - luarocks show luacov-coveralls || luarocks install luacov-coveralls --server=https://luarocks.org/dev --deps-mode=none
+  - luarocks install luacov-coveralls --server=https://luarocks.org/dev --deps-mode=none
   - luacov-coveralls -v
