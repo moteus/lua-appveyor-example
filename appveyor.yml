@@ -76,4 +76,4 @@ test_script:
 after_test:
   - if "%LUA_VER:~0,3%"=="5.1" (luarocks show bit32 || luarocks install bit32)
   - luarocks install luacov-coveralls --server=https://luarocks.org/dev
-  - luacov-coveralls -v -b=-14
+  - luacov-coveralls -v -b=-16
