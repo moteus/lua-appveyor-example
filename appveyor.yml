@@ -8,6 +8,8 @@ shallow_clone: true
 
 environment:
   LUAROCKS_VER: 2.3.0
+  COVERALLS_REPO_TOKEN:
+    secure: lcJRVRw/g4lG1AWMyjiZPi9tp7PMxEzNT3z7XknYjHPPH7h6pj1UowYHZTD9SZGN
   matrix:
   - LUA_VER: 5.1.5
   - LUA_VER: 5.2.4  # Lua 5.2.4 with compatibility flags enabled (DLUA_COMPAT_ALL).
