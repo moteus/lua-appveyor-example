@@ -67,6 +67,8 @@ build_script:
 
 before_test:
   # install test only deps (if not already installed)
+  - echo %APPVEYOR_BUILD_FOLDER%
+  - echo %COVERALLS_REPO_TOKEN%
   - luarocks show telescope || luarocks install telescope
   - luarocks show luacov || luarocks install luacov
 
